@@ -33,3 +33,6 @@ def main_live(args):
 
             crowd_count = int(result.data.sum().item())
 
+            font = cv2.FONT_HERSHEY_SIMPLEX
+            cv2.putText(frame, "Crowd Couting: " + str(crowd_count), (10, 35), font, 1.3, (0, 0, 255), 3, cv2.LINE_AA)
+            cv2.imshow("Frame", frame)
