@@ -6,6 +6,7 @@ import argparse
 import cv2
 import copy
 import os
+import datetime
 
 def main_live(args):
     capture= cv2.VideoCapture(args.stream)
@@ -35,6 +36,8 @@ def main_live(args):
 
             font = cv2.FONT_HERSHEY_SIMPLEX
             cv2.putText(frame, "Crowd Couting: " + str(crowd_count), (10, 35), font, 1.3, (0, 0, 255), 3, cv2.LINE_AA)
+            cv2.putText(frame, datetime.datetime.now().strftime("%A %d %B %Y %I:%M:%S%p"),
+                        (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 0, 255), 1)
             cv2.imshow("Frame", frame)
 
             print(crowd_count)
