@@ -20,3 +20,16 @@ def main_live(args):
     while(capture.isOpened()):
         ret,frame= capture.read()
         if (ret):
+            key= cv2.waitKey(1) & 0xFF
+
+            copy_frame = copy.copy(frame)
+
+            copy_frame = transform(copy_frame)
+
+            # putting the batch dimension on tensor
+            copy_frame = copy_frame.unsqueeze(0)
+            copy_frame = copy_frame.to(device)
+            result = model(copy_frame)
+
+            crowd_count = int(result.data.sum().item())
+
