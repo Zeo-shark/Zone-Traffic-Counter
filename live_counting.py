@@ -17,3 +17,6 @@ def main_live(args):
         transforms.ToTensor()
     ])
     model.eval()
+    while(capture.isOpened()):
+        ret,frame= capture.read()
+        if (ret):
