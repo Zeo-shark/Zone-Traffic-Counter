@@ -49,3 +49,7 @@ if __name__ == "__main__":
                         help='The url stream for live couting')
     parser.add_argument('--weights', default="./checkpoints/cvpr2019_CAN_SHHA_353.pth", type=str,
                         help='The path to the weights .pt or .pth file')
+
+    args = parser.parse_args()
+
+    main_live(args)
