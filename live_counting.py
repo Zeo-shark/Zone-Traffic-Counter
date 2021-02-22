@@ -41,3 +41,6 @@ def main_live(args):
 
             if key == ord("q"):
                 break
+
+
+if __name__ == "__main__":
