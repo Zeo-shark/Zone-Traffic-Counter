@@ -4,7 +4,7 @@ Using an IP Cameras and Servers to manipulate data.
 
 - ***Data-Flow Diagram :***
 
-<!-- ![./src/Crowd_Counter_system.PNG](https://github.com/Zeo-shark/Irisys-Mall-Crowd-Counting-Challenge/blob/main/src/Crowd_Counter_system.PNG)    -->
+![./src/Crowd_Counter_system.PNG](https://github.com/Zeo-shark/Irisys-Mall-Crowd-Counting-Challenge/blob/main/src/Crowd_Counter_system.PNG)   
 
  - ***Output for People Couter in Crowded Mall:***  
 
