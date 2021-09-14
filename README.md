@@ -23,5 +23,5 @@ Using an IP Cameras and Servers to manipulate data.
 
 **These above can be represented as :**
 
-<!--  ![./src/Crwd_Counting_Mall.PNG](https://github.com/Zeo-shark/Irisys-Mall-Crowd-Counting-Challenge/blob/main/src/Crwd_Counting_Mall.PNG) -->
+ ![./src/Crwd_Counting_Mall.PNG](https://github.com/Zeo-shark/Irisys-Mall-Crowd-Counting-Challenge/blob/main/src/Crwd_Counting_Mall.PNG)
 
